@@ -4,7 +4,7 @@ function Header(props)
 {
   return <h1>{props.name}</h1>
 }
-function Content(props)
+function Part(props)
 {
   return <p>{props.name} {props.text}</p>
 }
@@ -26,11 +26,11 @@ const App=()=>{
 
   return (
     <div>
-    <Header name={course}/>
-    <Content name={part1} text={exercises1} />
-    <Content name={part2} text={exercises2} />
-    <Content name={part3} text={exercises3} />
-    <Total  text1={exercises1} text2={exercises2} text3={exercises3}/>
+  
+    <Part name={part1} text={exercises1} />
+    <Part name={part2} text={exercises2} />
+    <Part name={part3} text={exercises3} />
+   
     </div>
   )
   }
